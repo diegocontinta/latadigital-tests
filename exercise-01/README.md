@@ -1,6 +1,6 @@
 # Exercise 01 - APIREST express
 
-Ejericio de API rest para latadigital con express contiene un CRUD para el modelo `user` e implementa las siguentes especificaciones.
+Ejercicio de API rest para latadigital con express contiene un CRUD para el modelo `user` e implementa las siguentes especificaciones.
 
 1. Implementa autenticación a traves de un middleware utilizando JWT (JSON Web Tokens)
 2. Utilizar buenas prácticas de seguridad para proteger contra ataques de inyección SQL y XSS (Implementación de ORM)
