@@ -1,0 +1,83 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+  --border-color: #f1f1f1;
+  --border-radius-s: 0.25rem;
+  --border-radius-m: 0.5rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 255, 255, 255;
+    --background-end-rgb: 255, 255, 255;
+    --black-text: 0,0,0;
+  }
+}
+
+body {
+  color: rgb(var(--black-text));
+  background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+.container  {
+  width: 100%;
+  max-width: 1320px;
+  display: grid;
+  margin: 0 auto;
+}
+
+.h-100 {
+  height: 100vh;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.input {
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius-s);
+}
+.label {
+  padding-bottom: 0.25rem;
+}
+
+.border-radius-s {
+  border-radius: var(--border-radius-s);
+}
+
+.border-radius-m {
+  border-radius: var(--border-radius-m);
+}
+
+/* Styles user list*/
+
+.list__header {
+  border-bottom: 1px solid var(--border-color);
+}
+
+.list__content-description {
+  display: flex;
+  justify-content: space-between;
+}
+.border-bottom {
+  border-bottom: 1px solid var(--border-color);
+}
+

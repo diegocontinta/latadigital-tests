@@ -51,7 +51,6 @@ exports.updateUser = async (req, res) => {
                                     });
                     }
 
-
 exports.destroyUser = async (req, res) => {
 
                         await   User.destroy({ where : { id : req.body.id}})

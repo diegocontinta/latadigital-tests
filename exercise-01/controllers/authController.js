@@ -8,7 +8,7 @@ exports.login = async (req, res) => {
 
     try {
 
-        const user = await User.findOne({ where: {
+        const user = await User.scope('withoutPassword').findOne({ where: {
                                                     email : email,
                                                     password : password
                                                     }
@@ -28,7 +28,7 @@ exports.login = async (req, res) => {
         const token = jwt.sign({ userId: user.id }, process.env.JWT_SECRET, {
             expiresIn: '1h'
         });
-        res.json({ token });
+        res.json( {token : token, user : user } );
 
     } catch (error) {
         console.error('Error auth:', error);
