@@ -12,7 +12,7 @@ API RESTfull, CRM's y sitios web administrables en laravel, he usado heramientas
 3. Elixir
 
 Entre otras, tengo una subscripción a laracast incluso que me ayuda a mejorar mis habilidades con el framework
-uso phpstorm como ID para agilizar la productividad, conosco laravel y su ciclo completo de aplicacion, migraciones,
+uso phpstorm como ID para agilizar la productividad, conozco laravel y su ciclo completo de aplicacion, migraciones,
 modelos, controladores, vistas, middlewares, cronjobs, notificaciones tambien aunque he estadp alejado unos meses de 
 laravel tengo un conocimiento profundo de eloquent y las relaciones he realizado proyectos des cero hasta solo modulos
 de manera parcial.
